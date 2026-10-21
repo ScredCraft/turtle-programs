@@ -36,4 +36,5 @@ turtle.down() --second down facing left
 turtle.dig()
 turtle.turnRight()
 turtle.turnRight()
-turtle.dig() --start position for next loop
+turtle.dig() 
+turtle.turnLeft() --start position for next loop

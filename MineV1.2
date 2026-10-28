@@ -1,0 +1,65 @@
+print("Startup")
+print("Analyzing fuel level")
+print("Generating logs")
+print("Starting mining process")
+
+--These are placeholders for future planned features
+
+for section = 1, 13, 1 do
+
+      --[[
+            Looping begins for the turtle, goal is 26 sections.
+            
+      No (assert) functions, planned change after further investigation
+                  as recommended by the turtle API
+        ]]
+        
+    turtle.dig()
+    turtle.forward() --enters into 3x3
+    turtle.digUp() --dig up
+    turtle.turnLeft()
+    turtle.dig()
+    turtle.turnRight()
+    turtle.dig()
+    turtle.turnRight()
+    turtle.dig()
+    turtle.up() --first up facing right
+    turtle.dig()
+    turtle.turnLeft()
+    turtle.dig()
+    turtle.turnLeft()
+    turtle.dig()
+    turtle.digUp() --dig up
+    turtle.up() --second up facing left
+    turtle.dig()
+    turtle.turnRight()
+    turtle.dig()
+    turtle.turnRight()
+    turtle.dig()
+    turtle.turnLeft()
+    turtle.forward() --enters into next 3x3
+    turtle.turnLeft()
+    turtle.dig()
+    turtle.turnRight()
+    turtle.turnRight()
+    turtle.dig()
+    turtle.down() --first down facing right
+    turtle.dig()
+    turtle.turnLeft()
+    turtle.turnLeft()
+    turtle.dig()
+    turtle.down() --second down facing left
+    turtle.dig()
+    turtle.turnRight()
+    turtle.turnRight()
+    turtle.dig() 
+    turtle.turnLeft() --start position for next loop
+end     --loop ends
+turtle.turnLeft()
+turtle.turnLeft()
+-- positioning for return journey
+for return = 1, 26, 1 do
+  turtle.forward()
+end
+-- turtle returns to the original position
+print("Mining complete")

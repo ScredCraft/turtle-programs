@@ -1,8 +1,12 @@
-
 if turtle.getFuelLevel() < 100 then
   print("Fuel is low")
     local success = turtle.refuel()
     if success then
+        if turtle.getFuelLevel() >= 100 then
+          print("Enough fuel to mine")
+        else
+          print("Fuel still insufficient")
+        end
       print ("Refueling successful")
     else
       print ("Refueling failed")
